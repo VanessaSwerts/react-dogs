@@ -1,6 +1,6 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import { Header, Footer, Home, Login } from './components'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Header, Footer, Home, LoginForm, LoginCreate, LoginPasswordLost, LoginPasswordReset } from './components'
 import './App.css'
 
 
@@ -8,19 +8,19 @@ export default function App() {
 
   return (
     <div >
-      <BrowserRouter>
+      <Router>
         <Header />
-        <Switch>
-          <Route path="/" exact >
-            <Home />
-          </Route>
 
-          <Route path="/login">
-            <Login />
-          </Route>
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/login" component={LoginForm} exact />
+          <Route path="/login/criar" component={LoginCreate} exact/>
+          <Route path="/login/perdeu" component={LoginPasswordLost} exact/>
+          <Route path="/login/resetar" component={LoginPasswordReset} exact/>
         </Switch>
+        
         <Footer />
-      </BrowserRouter>
+      </Router>
     </div>
   )
 }

@@ -9,10 +9,22 @@ import Home from './Home/Home'
 
 //Login
 import Login from './Login/Login'
+import LoginForm from './Login/LoginForm'
+import LoginCreate from './Login/LoginCreate'
+import LoginPasswordLost from './Login/LoginPasswordLost'
+import LoginPasswordReset from './Login/LoginPasswordReset'
 
-export {  
+export {
+  //Footer  
   Footer,
+  // Header
   Header,
+  //Home
   Home,
-  Login
+  //Login
+  Login,
+  LoginForm,
+  LoginCreate,
+  LoginPasswordLost,
+  LoginPasswordReset
 }
