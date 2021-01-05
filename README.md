@@ -1,11 +1,11 @@
 
 <p align="center"> 
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/VanessaSwerts/imovel-app?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/VanessaSwerts/react-dogs?color=%2304D361">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/VanessaSwerts/imovel-app">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/VanessaSwerts/react-dogs">
   
-  <a href="https://github.com/VanessaSwerts/imovel-app/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/VanessaSwerts/imovel-app">
+  <a href="https://github.com/VanessaSwerts/react-dogs/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/VanessaSwerts/react-dogs">
   </a>
     
    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">  
