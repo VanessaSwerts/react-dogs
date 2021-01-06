@@ -1,6 +1,10 @@
 // Footer
 import Footer from './Footer/Footer'
 
+// Forms
+import Button from './Forms/Button'
+import Input from './Forms/Input'
+
 //Header
 import Header from './Header/Header'
 
@@ -17,6 +21,9 @@ import LoginPasswordReset from './Login/LoginPasswordReset'
 export {
   //Footer  
   Footer,
+  // Forms
+  Button,
+  Input,
   // Header
   Header,
   //Home
