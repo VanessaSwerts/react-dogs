@@ -1,6 +1,3 @@
-//Error
-import Error from './Helper/Error'
-
 // Footer
 import Footer from './Footer/Footer'
 
@@ -10,6 +7,10 @@ import Input from './Forms/Input'
 
 //Header
 import Header from './Header/Header'
+
+//Helper
+import Error from './Helper/Error'
+import ProtectedRouter from './Helper/ProtectedRouter'
 
 //Home
 import Home from './Home/Home'
@@ -21,9 +22,10 @@ import LoginCreate from './Login/LoginCreate'
 import LoginPasswordLost from './Login/LoginPasswordLost'
 import LoginPasswordReset from './Login/LoginPasswordReset'
 
+//User
+import User from './User/User'
+
 export {
-  //Error
-  Error,
   //Footer  
   Footer,
   // Forms
@@ -31,6 +33,9 @@ export {
   Input,
   // Header
   Header,
+  //Helper
+  Error,
+  ProtectedRouter,
   //Home
   Home,
   //Login
@@ -38,5 +43,7 @@ export {
   LoginForm,
   LoginCreate,
   LoginPasswordLost,
-  LoginPasswordReset
+  LoginPasswordReset,
+  //User
+  User
 }

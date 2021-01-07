@@ -27,7 +27,7 @@ export function UserStorage({ children, history }) {
       const { token } = await tokenRes.json()
       window.localStorage.setItem('token', token)
       await getUser(token)
-      // history.push(`/conta`)
+      navigate('/conta')
     } catch (err) {
       setError(err.message)
       setLogin(false)
@@ -63,8 +63,10 @@ export function UserStorage({ children, history }) {
       } finally {
         setLoading(false)
       }
+    } else {
+      setLogin(false)
     }
-  },[navigate])
+  }, [navigate])
 
   useEffect(() => {
     autoLogin()
