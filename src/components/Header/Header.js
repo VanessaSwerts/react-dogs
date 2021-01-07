@@ -6,7 +6,7 @@ import { UserContext } from '../../context/UserContext'
 
 
 export default function Header() {
-  const { data } = useContext(UserContext)
+  const { data } = useContext(UserContext)  
 
   return (
     <header className={styles.header}>

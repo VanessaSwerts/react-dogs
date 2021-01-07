@@ -8,7 +8,7 @@ export function UserStorage({ children }) {
   const [data, setData] = useState(null)
   const [login, setLogin] = useState(null)
   const [loding, setLoding] = useState(false)
-  const [error, setError] = useState(false)
+  const [error, setError] = useState(null)
 
   const getUser = async (token) => {
     const { url, options } = USER_GET(token)
@@ -20,10 +20,9 @@ export function UserStorage({ children }) {
 
   const userLogin = async (username, password) => {
     const { url, options } = TOKEN_POST({ username, password })
-
-    const tokenResp = await fetch(url, options)
-    const { token } = await tokenResp.json()
-    window.localStorage.setitem('token', token)
+    const tokenRes = await fetch(url, options)
+    const { token } = await tokenRes.json()
+    window.localStorage.setItem('token', token)
     getUser(token)
   }
 
