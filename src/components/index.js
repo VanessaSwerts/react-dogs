@@ -1,3 +1,6 @@
+//Error
+import Error from './Helper/Error'
+
 // Footer
 import Footer from './Footer/Footer'
 
@@ -19,6 +22,8 @@ import LoginPasswordLost from './Login/LoginPasswordLost'
 import LoginPasswordReset from './Login/LoginPasswordReset'
 
 export {
+  //Error
+  Error,
   //Footer  
   Footer,
   // Forms
