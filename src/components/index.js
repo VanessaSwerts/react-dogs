@@ -1,3 +1,6 @@
+//Feed
+import Feed from './Feed/Feed'
+
 // Footer
 import Footer from './Footer/Footer'
 
@@ -24,8 +27,14 @@ import LoginPasswordReset from './Login/LoginPasswordReset'
 
 //User
 import User from './User/User'
+import UserHeader from './User/UserHeader'
+import UserHeaderNav from './User/UserHeaderNav'
+import UserPhotoPost from './User/UserPhotoPost'
+import UserStats from './User/UserStats'
 
 export {
+  //Feed
+  Feed,
   //Footer  
   Footer,
   // Forms
@@ -45,5 +54,10 @@ export {
   LoginPasswordLost,
   LoginPasswordReset,
   //User
-  User
+  User,
+  UserHeader,
+  UserHeaderNav,
+  UserPhotoPost,
+  UserStats,
+  
 }
