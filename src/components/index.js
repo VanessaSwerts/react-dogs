@@ -29,6 +29,11 @@ import LoginCreate from './Login/LoginCreate'
 import LoginPasswordLost from './Login/LoginPasswordLost'
 import LoginPasswordReset from './Login/LoginPasswordReset'
 
+//Photo
+import Photo from './Photo/Photo'
+import PhotoComents from './Photo/PhotoComents'
+import PhotoContent from './Photo/PhotoContent'
+
 //User
 import User from './User/User'
 import UserHeader from './User/UserHeader'
@@ -61,6 +66,10 @@ export {
   LoginCreate,
   LoginPasswordLost,
   LoginPasswordReset,
+  //Photo
+  Photo,
+  PhotoComents,
+  PhotoContent,
   //User
   User,
   UserHeader,
