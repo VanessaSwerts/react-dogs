@@ -1,5 +1,8 @@
 //Feed
 import Feed from './Feed/Feed'
+import FeedModal from './Feed/FeedModal'
+import FeedPhotos from './Feed/FeedPhotos'
+import FeedPhotosItem from './Feed/FeedPhotosItem'
 
 // Footer
 import Footer from './Footer/Footer'
@@ -13,6 +16,7 @@ import Header from './Header/Header'
 
 //Helper
 import Error from './Helper/Error'
+import Loading from './Helper/Loading'
 import ProtectedRouter from './Helper/ProtectedRouter'
 
 //Home
@@ -35,6 +39,9 @@ import UserStats from './User/UserStats'
 export {
   //Feed
   Feed,
+  FeedModal,
+  FeedPhotos,
+  FeedPhotosItem,
   //Footer  
   Footer,
   // Forms
@@ -44,6 +51,7 @@ export {
   Header,
   //Helper
   Error,
+  Loading,
   ProtectedRouter,
   //Home
   Home,
