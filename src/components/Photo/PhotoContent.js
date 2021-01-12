@@ -1,17 +1,17 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { PhotoComments, PhotoDelete } from '../'
+import { PhotoComments, PhotoDelete, Image } from '../'
 import { UserContext } from '../../context/UserContext'
 import styles from './PhotoContent.module.css'
 
 export default function PhotoContent({ data }) {
   const { photo, comments } = data
-  const  user  = useContext(UserContext)
+  const user = useContext(UserContext)
 
   return (
     <div className={styles.photo}>
       <div className={styles.img}>
-        <img src={photo.src} alt={photo.title} />
+        <Image src={photo.src} alt={photo.title}/>        
       </div>
       <div className={styles.details}>
         <div>

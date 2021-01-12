@@ -16,6 +16,7 @@ import Header from './Header/Header'
 
 //Helper
 import Error from './Helper/Error'
+import Image from './Helper/Image'
 import Loading from './Helper/Loading'
 import ProtectedRouter from './Helper/ProtectedRouter'
 
@@ -58,6 +59,7 @@ export {
   Header,
   //Helper
   Error,
+  Image,
   Loading,
   ProtectedRouter,
   //Home
