@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { ReactComponent as Enviar } from '../../assets/enviar.svg'
 import useFetch from '../../hooks/useFetch'
 import { COMMENT_POST } from '../../api/Api'
+import { Error } from '../'
+import styles from './PhotoCommentsForm.module.css'
+
 
 export default function PhotoCommentsForm({ id, setComments }) {
   const [comment, setComment] = useState('')
@@ -10,7 +13,7 @@ export default function PhotoCommentsForm({ id, setComments }) {
   const handleAddComment = async (e) => {
     e.preventDefault()
     const { url, options } = COMMENT_POST(id, { comment })
-    const { response, json} = await request(url, options)
+    const { response, json } = await request(url, options)
     if (response.ok) {
       setComment('')
       setComments((comments) => [...comments, json])
@@ -18,17 +21,19 @@ export default function PhotoCommentsForm({ id, setComments }) {
   }
 
   return (
-    <form onSubmit={handleAddComment}>
+    <form className={styles.form} onSubmit={handleAddComment}>
       <textarea
+        className={styles.textarea}
         id="comment"
         name="comment"
         placeholder="Comente ..."
         value={comment}
         onChange={({ target }) => setComment(target.value)}
       />
-      <button>
+      <button className={styles.button}>
         <Enviar />
       </button>
+      {error && <Error error={error} />}
     </form>
   )
 }
