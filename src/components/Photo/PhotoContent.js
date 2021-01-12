@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { PhotoComents } from '../'
+import { PhotoComments } from '../'
 import styles from './PhotoContent.module.css'
 
 export default function PhotoContent({ data }) {
-  const { photo, coments } = data
+  const { photo, comments } = data
 
   return (
     <div className={styles.photo}>
@@ -26,7 +26,7 @@ export default function PhotoContent({ data }) {
           </ul>
         </div>
       </div>
-      <PhotoComents id={photo.id} coments={coments} />
+      <PhotoComments id={photo.id} comments={comments} />
     </div>
   )
 }

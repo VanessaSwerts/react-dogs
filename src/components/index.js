@@ -31,7 +31,8 @@ import LoginPasswordReset from './Login/LoginPasswordReset'
 
 //Photo
 import Photo from './Photo/Photo'
-import PhotoComents from './Photo/PhotoComents'
+import PhotoComments from './Photo/PhotoComments'
+import PhotoCommentsForm from './Photo/PhotoCommentsForm'
 import PhotoContent from './Photo/PhotoContent'
 
 //User
@@ -68,7 +69,8 @@ export {
   LoginPasswordReset,
   //Photo
   Photo,
-  PhotoComents,
+  PhotoComments,
+  PhotoCommentsForm,
   PhotoContent,
   //User
   User,
