@@ -34,6 +34,7 @@ import Photo from './Photo/Photo'
 import PhotoComments from './Photo/PhotoComments'
 import PhotoCommentsForm from './Photo/PhotoCommentsForm'
 import PhotoContent from './Photo/PhotoContent'
+import PhotoDelete from './Photo/PhotoDelete'
 
 //User
 import User from './User/User'
@@ -72,6 +73,7 @@ export {
   PhotoComments,
   PhotoCommentsForm,
   PhotoContent,
+  PhotoDelete,
   //User
   User,
   UserHeader,
