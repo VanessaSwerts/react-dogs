@@ -4,14 +4,14 @@ import { PhotoComments, PhotoDelete, Image } from '../'
 import { UserContext } from '../../context/UserContext'
 import styles from './PhotoContent.module.css'
 
-export default function PhotoContent({ data }) {
+export default function PhotoContent({ data, single }) {
   const { photo, comments } = data
   const user = useContext(UserContext)
 
   return (
-    <div className={styles.photo}>
+    <div className={`${styles.photo} ${single ? styles.single : ''}`}>
       <div className={styles.img}>
-        <Image src={photo.src} alt={photo.title}/>        
+        <Image src={photo.src} alt={photo.title} />
       </div>
       <div className={styles.details}>
         <div>
@@ -31,7 +31,7 @@ export default function PhotoContent({ data }) {
           </ul>
         </div>
       </div>
-      <PhotoComments id={photo.id} comments={comments} />
+      <PhotoComments id={photo.id} single={single} comments={comments} />
     </div>
   )
 }
