@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes, Navigate } from 'react-router-dom'
-import { LoginForm, LoginCreate, LoginPasswordLost, LoginPasswordReset } from '../'
+import { LoginForm, LoginCreate, LoginPasswordLost, LoginPasswordReset, NotFound } from '../'
 import { UserContext } from '../../context/UserContext'
 import styles from './Login.module.css';
 
@@ -16,6 +16,7 @@ export default function Login() {
           <Route path="criar" element={<LoginCreate />} />
           <Route path="perdeu" element={<LoginPasswordLost />} />
           <Route path="resetar" element={<LoginPasswordReset />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </section>

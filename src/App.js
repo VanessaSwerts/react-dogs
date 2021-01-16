@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { Header, Footer, Home, Login, User, ProtectedRouter, Photo, UserProfile } from './components'
+import { Header, Footer, Home, Login, User, ProtectedRouter, Photo, UserProfile, NotFound } from './components'
 import { UserStorage } from './context/UserContext'
 import './App.css'
 
@@ -18,6 +18,7 @@ export default function App() {
             <ProtectedRouter path="conta/*" element={<User />} />
             <Route path="foto/:id" element={<Photo />} />
             <Route path="perfil/:user" element={<UserProfile />} />
+            <Route path="*" element={<NotFound />} />
 
           </Routes>
 

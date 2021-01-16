@@ -18,6 +18,7 @@ import Header from './Header/Header'
 import Error from './Helper/Error'
 import Image from './Helper/Image'
 import Loading from './Helper/Loading'
+import NotFound from './Helper/NotFound'
 import ProtectedRouter from './Helper/ProtectedRouter'
 
 //Home
@@ -62,6 +63,7 @@ export {
   Error,
   Image,
   Loading,
+  NotFound,
   ProtectedRouter,
   //Home
   Home,
