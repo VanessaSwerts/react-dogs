@@ -42,6 +42,7 @@ import User from './User/User'
 import UserHeader from './User/UserHeader'
 import UserHeaderNav from './User/UserHeaderNav'
 import UserPhotoPost from './User/UserPhotoPost'
+import UserProfile from './User/UserProfile'
 import UserStats from './User/UserStats'
 
 export {
@@ -81,6 +82,7 @@ export {
   UserHeader,
   UserHeaderNav,
   UserPhotoPost,
+  UserProfile,
   UserStats,
   
 }
