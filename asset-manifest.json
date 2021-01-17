@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-dogs/static/css/main.a1cf6310.chunk.css",
-    "main.js": "/react-dogs/static/js/main.ab9aa6ba.chunk.js",
-    "main.js.map": "/react-dogs/static/js/main.ab9aa6ba.chunk.js.map",
+    "main.js": "/react-dogs/static/js/main.b31e6ec0.chunk.js",
+    "main.js.map": "/react-dogs/static/js/main.b31e6ec0.chunk.js.map",
     "runtime-main.js": "/react-dogs/static/js/runtime-main.fa88fef7.js",
     "runtime-main.js.map": "/react-dogs/static/js/runtime-main.fa88fef7.js.map",
     "static/js/2.287001a8.chunk.js": "/react-dogs/static/js/2.287001a8.chunk.js",
@@ -32,6 +32,6 @@
     "static/js/runtime-main.fa88fef7.js",
     "static/js/3.128ed6e0.chunk.js",
     "static/css/main.a1cf6310.chunk.css",
-    "static/js/main.ab9aa6ba.chunk.js"
+    "static/js/main.b31e6ec0.chunk.js"
   ]
 }
