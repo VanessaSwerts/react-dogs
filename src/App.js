@@ -8,7 +8,7 @@ import './App.css'
 export default function App() {
   return (
     <div className="App" >
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <UserStorage>
           <Header />
           <main className="AppBody">
