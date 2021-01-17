@@ -13,7 +13,7 @@
 </p>
 
 <h4 align="center"> 
-	🚧 InstaDogs - em desenvolvimento 🚧
+	🚧 InstaDogs - Concluído 🚧
 </h4>
 
 <p align="center">
@@ -34,11 +34,14 @@ InstaDogs  é um projeto desenvolvido durnate o curso "React Completo" da [Origa
 
 ## ⚙️ Funcionalidades
  
-- [ ] Cadastrar usuário
-- [ ] Realizar login
-- [ ] Listar dogs
-- [ ] Cadastrar dogs  
-- [ ] Deletar dogs
+- [x] Cadastrar usuário
+- [x] Realizar login
+- [x] Recuperar senha
+- [x] Listar dogs
+- [x] Cadastrar dogs  
+- [x] Deletar dogs
+- [x] Adicionar comentário em fotos
+- [x] Visualizar estatísticas
   
 ---
 
@@ -78,6 +81,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 #### **Web**  ([ReactJS](https://pt-br.reactjs.org))
 - **Dependências**:  -   
   -   **[React Router Dom](https://reactrouter.com)**    
+  -   **[Victory](https://formidable.com/open-source/victory/)** 
 
 Veja o arquivo  [package.json](https://github.com/VanessaSwerts/react-dogs/blob/master/package.json)
 
