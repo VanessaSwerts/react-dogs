@@ -45,6 +45,7 @@ import UserHeaderNav from './User/UserHeaderNav'
 import UserPhotoPost from './User/UserPhotoPost'
 import UserProfile from './User/UserProfile'
 import UserStats from './User/UserStats'
+import UserStatsGraphs from './User/UserStatsGraphs'
 
 export {
   //Feed
@@ -86,5 +87,6 @@ export {
   UserPhotoPost,
   UserProfile,
   UserStats,
+  UserStatsGraphs
   
 }
