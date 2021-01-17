@@ -36,7 +36,7 @@ export default function LoginPasswordReset() {
   }
 
   return (
-    <div>
+    <section className="animeLeft">
       <h1 className="title">Nova senha</h1>
       <form onSubmit={handleSubmit}>
         <Input label="Nova Senha" type="password" id="password" {...password} />
@@ -44,8 +44,8 @@ export default function LoginPasswordReset() {
           ? <Button disabled>salvando ...</Button>
           : <Button>Salvar Senha</Button>
         }
-        {error && <Error error={error} />}
       </form>
-    </div>
+      {error && <Error error={error} />}
+    </section>
   )
 }
