@@ -66,11 +66,12 @@ export function UserStorage({ children, history }) {
     } else {
       setLogin(false)
     }
-  }, [navigate])
+  }, [navigate, userLogout])
 
   useEffect(() => {
     autoLogin()
-  }, [userLogout])
+  }, [userLogout, autoLogin
+  ])
 
   return (
     <UserContext.Provider value={{ userLogin, userLogout, data, error, loading, login }}>
