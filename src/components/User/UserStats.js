@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { lazy, useEffect, Suspense } from 'react'
 import useFetch from '../../hooks/useFetch'
 import { STATS_GET } from '../../api/Api'
-import { Error, Loading, UserStatsGraphs } from '../'
+import { Error, Loading } from '../'
+
+const UserStatsGraphs = lazy(() => import('./UserStatsGraphs'))
 
 export default function UserStats() {
   const { data, error, loading, request } = useFetch()
@@ -20,9 +22,9 @@ export default function UserStats() {
   if (loading) return <Loading />
   if (data)
     return (
-      <div>
+      <Suspense fallback={<div></div>}>
         <UserStatsGraphs data={data} />
-      </div>
+      </Suspense>
     )
   else
     return null
